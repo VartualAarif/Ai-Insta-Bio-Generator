@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="creator" content="Aarif">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Primary Meta Tags -->
+    <title>About BioGen - AI Instagram Bio Generator | Free Bio Generator</title>
+    <meta name="title" content="About BioGen - AI Instagram Bio Generator | Free Bio Generator">
+    <meta name="description" content="Learn about BioGen, the free AI-powered Instagram bio generator. Discover how we help influencers, businesses, and personal accounts create unique bios and usernames.">
+    <meta name="keywords" content="AI instagram bio generator, free bio generator, about biogen, instagram bio maker, username generator, free prompts">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biogen.com/about">
+    <meta property="og:title" content="About BioGen - AI Instagram Bio Generator">
+    <meta property="og:description" content="Learn about BioGen, the free AI-powered Instagram bio generator. Discover how we help influencers, businesses, and personal accounts create unique bios and usernames.">
+    <meta property="og:image" content="https://biogen.com/about-og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://biogen.com/about">
+    <meta name="twitter:title" content="About BioGen - AI Instagram Bio Generator">
+    <meta name="twitter:description" content="Learn about BioGen, the free AI-powered Instagram bio generator. Discover how we help influencers, businesses, and personal accounts create unique bios and usernames.">
+    <meta name="twitter:image" content="https://biogen.com/about-twitter-image.jpg">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="author" content="TechTitanAarif">
+    <meta name="publisher" content="@khanAarif">
+    <meta name="application-name" content="BioGen - AI Instagram Bio Generator">
+    <meta name="category" content="Social Media Tools">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="revisit-after" content="7 days">
+    <meta name="target" content="all">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="theme-color" content="#8B5CF6">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://biogen.com/about">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="instafavicon.png" type="image/x-icon" sizes="16x16">
+    
+    <!-- Stylesheets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About BioGen - AI Instagram Bio Generator",
+        "description": "Learn about BioGen, the free AI-powered Instagram bio generator. Discover how we help influencers, businesses, and personal accounts create unique bios and usernames.",
+        "url": "https://biogen.com/about",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "BioGen",
+            "description": "AI-powered Instagram bio and username generator",
+            "url": "https://biogen.com",
+            "sameAs": [
+                "https://twitter.com/khan_Aarif78692",
+                "https://www.facebook.com/share/16fVyaJNXb/",
+                "https://www.instagram.com/khan_a.s.k786"
+            ]
+        }
+    }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-5">
+                    <a href="index.html" class="text-2xl font-bold text-purple-800">BioGen</a>
+                    <!-- AI Chatbot -->
+                    <div id="chatbot-container" class="relative">
+                        <!-- Chat Button -->
+                        <button id="chat-button" class="bg-purple-600 text-white rounded-full p-3 shadow-lg hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-comments text-xl"></i>
+                        </button>
+
+                        <!-- Chat Window -->
+                        <div id="chat-window" class="hidden absolute top-12 left-0 w-96 bg-white rounded-lg shadow-xl flex flex-col h-[500px]">
+                            <!-- Chat Header -->
+                            <div class="bg-purple-600 text-white p-4 rounded-t-lg flex justify-between items-center">
+                                <h3 class="font-bold">AI Assistant</h3>
+                                <button id="close-chat" class="text-white hover:text-gray-200">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+
+                            <!-- Chat Messages -->
+                            <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4">
+                                <div class="flex items-start space-x-2">
+                                    <div class="bg-purple-100 rounded-lg p-3 max-w-[80%]">
+                                        <p class="text-gray-800">👋 Hi! I'm your AI assistant. How can I help you today?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chat Input -->
+                            <div class="border-t p-4">
+                                <form id="chat-form" class="flex space-x-2">
+                                    <input type="text" id="chat-input" 
+                                        class="flex-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                        placeholder="Type your message...">
+                                    <button type="submit" 
+                                        class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-all duration-300">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-purple-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-purple-600 transition">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-purple-600 transition">Privacy</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-purple-600 transition">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-purple-600 transition">About</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-purple-600 transition">Contact</a>
+                <a href="privacy.html" class="block py-2 text-gray-700 hover:text-purple-600 transition">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold text-purple-800 mb-8 text-center animate-fade-in">About BioGen</h1>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8 animate-slide-up">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h2>
+                <p class="text-gray-600 mb-6">
+                    At BioGen, we're passionate about helping people express their unique personality through creative Instagram bios and usernames. Our AI-powered tool makes it easy to stand out on social media with content that truly represents you.
+                </p>
+                
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">How It Works</h2>
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="text-center p-4">
+                        <i class="fas fa-magic text-3xl text-purple-600 mb-4"></i>
+                        <h3 class="font-bold mb-2">1. Choose Style</h3>
+                        <p class="text-gray-600">Select from various personality styles</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-keyboard text-3xl text-purple-600 mb-4"></i>
+                        <h3 class="font-bold mb-2">2. Add Keywords</h3>
+                        <p class="text-gray-600">Customize with your own keywords</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <i class="fas fa-bolt text-3xl text-purple-600 mb-4"></i>
+                        <h3 class="font-bold mb-2">3. Generate</h3>
+                        <p class="text-gray-600">Get instant, unique results</p>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                    <li>Advanced AI technology for unique content</li>
+                    <li>Multiple style options to match your personality</li>
+                    <li>Instant results with no waiting time</li>
+                    <li>User-friendly interface</li>
+                    <li>Free to use</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 animate-slide-up">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Technology</h2>
+                <p class="text-gray-600 mb-6">
+                    We use state-of-the-art AI models through OpenRouter to generate creative and unique content. Our system is constantly learning and improving to provide you with the best possible results.
+                </p>
+                
+                <div class="flex justify-center space-x-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-purple-600 mb-2">100K+</div>
+                        <p class="text-gray-600">Monthly Users</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-purple-600 mb-2">1M+</div>
+                        <p class="text-gray-600">Bio's Generated</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-purple-600 mb-2">99%</div>
+                        <p class="text-gray-600">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600">&copy; 2024 BioGen. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://x.com/khan_Aarif78692?t=Z_B0nyC50Mm7syA4UH16vg&s=09" class="text-gray-600 hover:text-purple-600 transition"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/share/16fVyaJNXb/" class="text-gray-600 hover:text-purple-600 transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/khan_a.s.k786?igsh=MWhqemQ0ZjdjN2l4aw==&utm_source=ig_contact_invite" class="text-gray-600 hover:text-purple-600 transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
